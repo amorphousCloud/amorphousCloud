@@ -1,2 +1,4 @@
 /*palette #10091D #685798 #F5E6E8*/
-h1 { color: #685798}
+h1 { color: #685798;
+     text-align: left;
+    }

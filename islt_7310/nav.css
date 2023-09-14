@@ -1,0 +1,11 @@
+ul {
+    text-align: right;
+}
+ul li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    margin: .25em;
+    padding: .25em;
+    border: 3px solid plum;
+    border-radius:2px;
+}
