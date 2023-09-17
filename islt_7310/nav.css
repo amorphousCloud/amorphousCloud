@@ -6,7 +6,8 @@ ul li {
     display: inline-block;
     margin: .25em;
     padding: .25em;
-    border: 3px solid plum;
+    border: 3px solid;
+    border-color: #9874B4; 
     border-radius:2px;
 }
 

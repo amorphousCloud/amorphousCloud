@@ -2,3 +2,8 @@
 h1 { color: #685798;
      text-align: left;
     }
+h2 { color: #AC94F4;
+     text-align: left;
+}
+main p { text-indent: 30px; }
+main p:first-child::first-letter {font-size: 150%; } /* Professor Glaser - I ran this line of code SEVERAL different ways; main p::first-letter works just fine capitalizing each first letter of each paragraph, but incorporating the pseudo-class into statement doesn't isolate the first leter of the first paragraph in main. Not sure why :/ */ 
