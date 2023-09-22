@@ -1,9 +1,21 @@
 /*palette #10091D #685798 #F5E6E8*/
+header {text-align: center;}
 h1 { color: #685798;
-     text-align: left;
-    }
+     text-align: center;
+     }
 h2 { color: #AC94F4;
-     text-align: left;
-}
-main p { text-indent: 30px; }
+     text-align: left; 
+     }
+h3 { text-align: center;}
+main p { padding-left: 25%;
+         padding-right: 25%;
+         text-align: center;
+         display: grid;
+     }
+main blockquote {padding-left: 25%;
+     padding-right: 25%;
+     text-align: center;
+     display: grid;
+     }
 main p:first-child::first-letter {font-size: 150%; } /* Professor Glaser - I ran this line of code SEVERAL different ways; main p::first-letter works just fine capitalizing each first letter of each paragraph, but incorporating the pseudo-class into statement doesn't isolate the first leter of the first paragraph in main. Not sure why :/ */ 
+footer { text-align: center; }

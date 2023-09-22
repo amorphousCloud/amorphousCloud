@@ -1,6 +1,5 @@
 ul {
-    text-align: right;
-}
+    text-align: center; }
 ul li {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: inline-block;
@@ -16,7 +15,7 @@ ul li {
     position: relative;
 }
 
-#nav_menu li { float: left; }
+#nav_menu li { float: none; }
 
 #nav_menu ul ul {
     display: none;
@@ -34,3 +33,10 @@ ul li {
     display: block;
     clear: both;
 }
+img {border-radius: 50%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 25%;
+     height: 25%;
+    }
