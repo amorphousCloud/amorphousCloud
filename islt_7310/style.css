@@ -11,6 +11,8 @@ main p { padding-left: 25%;
          padding-right: 25%;
          text-align: center;
          display: grid;
+         grid-template: 30px 300px;
+         grid-gap: 20px; 
      }
 main blockquote {padding-left: 25%;
      padding-right: 25%;
