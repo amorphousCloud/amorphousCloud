@@ -21,3 +21,10 @@ main blockquote {padding-left: 25%;
      }
 main p:first-child::first-letter {font-size: 150%; } /* Professor Glaser - I ran this line of code SEVERAL different ways; main p::first-letter works just fine capitalizing each first letter of each paragraph, but incorporating the pseudo-class into statement doesn't isolate the first leter of the first paragraph in main. Not sure why :/ */ 
 footer { text-align: center; }
+img {border-radius: 50%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 25%;
+     height: 25%;
+    }
