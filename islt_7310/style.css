@@ -38,7 +38,9 @@ main p:first-child::first-letter {
      font-size: 150%; 
      }  
 footer { 
-     text-align: center; }
+     text-align: center;
+     padding-bottom:25%; 
+}
 img {
      border-radius: 50%;
      display: block;
