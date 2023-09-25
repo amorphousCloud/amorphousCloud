@@ -39,16 +39,8 @@ main p:first-child::first-letter {
      }  
 footer { 
      text-align: center;
-     padding-bottom:25%; 
+     padding-bottom:5%; 
 }
-img {
-     border-radius: 50%;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 25%;
-     height: 25%;
-    }
 @media (max-width:960px) {
   body {
      font: size 0.8rem} 
