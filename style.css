@@ -1,0 +1,55 @@
+/*palette #10091D #685798 #F5E6E8 #d8dbe9*/
+header {
+     text-align: center;}
+h1 { 
+     color: #685798;
+     text-align: center;
+     }
+h2 { 
+     color: #AC94F4;
+     text-align: center;
+     padding-left:25%;
+     padding-right:25%;
+     }
+h3 { 
+     text-align: center;}
+figcaption {
+     text-align: center;
+     font-style: italic;
+}
+body { 
+     height: 100vh;
+     background-color: #F5E6E8; }
+main p { 
+     padding-left: 25%;
+     padding-right: 25%;
+     text-align: center;
+     display: grid;
+     grid-template: 30px 300px;
+     grid-gap: 20px; 
+     }
+main blockquote {
+     padding-left: 25%;
+     padding-right: 25%;
+     text-align: center;
+     display: grid;
+     }
+main p:first-child::first-letter {
+     font-size: 150%; 
+     }  
+footer { 
+     text-align: center;
+     padding-bottom:5%; 
+}
+img {
+     border-radius: 50%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 25%;
+     height: 25%;
+    }
+@media (max-width:960px) {
+  body {
+     font: size 0.8rem} 
+}
