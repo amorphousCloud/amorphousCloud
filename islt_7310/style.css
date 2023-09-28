@@ -1,4 +1,16 @@
 /*palette #10091D #685798 #F5E6E8 #d8dbe9*/
+@font-face {
+     font-family:'Poppins';
+     src:url("c:\Users\Reils\Desktop\islt_7310\Poppins\Poppins-Regular.ttf");
+     font-weight:normal;
+}
+@media (max-width:960px) {
+     body {
+        font: size 0.8rem} 
+   }
+blockquote {
+     font-family:'Poppins', sans-serif;
+}
 header {
      text-align: center;}
 h1 { 
@@ -40,8 +52,4 @@ main p:first-child::first-letter {
 footer { 
      text-align: center;
      padding-bottom:5%; 
-}
-@media (max-width:960px) {
-  body {
-     font: size 0.8rem} 
 }
