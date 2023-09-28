@@ -58,6 +58,11 @@ main p:first-child::first-letter {
      font-size: 150%; 
      }  
 footer { 
+     background-image: url(images/pinkClouds.jpg);
      text-align: center;
      padding-bottom:5%; 
+     background-repeat:no-repeat;
+     background-size: auto;
+     background-position: center;
+     border-radius: 50%;
 }
