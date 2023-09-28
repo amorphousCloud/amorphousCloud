@@ -4,9 +4,17 @@
      src:url("c:\Users\Reils\Desktop\islt_7310\Poppins\Poppins-Regular.ttf");
      font-weight:normal;
 }
-@media (max-width:960px) {
-     body {
-        font: size 0.8rem} 
+@media print {
+     header,nav,ul,li,img {
+          display:none;
+     }
+     h1,p,blockquote,footer {      /*do not have educational credentials as i am making a portfolio*/
+          font-color:#000000;
+          font-family:'Poppin','Times New Roman', Times, serif;
+          width:100%;
+          padding: 0 !important;
+          margin: 0 !important;
+     }
    }
 blockquote {
      font-family:'Poppins', sans-serif;
