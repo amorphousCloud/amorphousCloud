@@ -1,9 +1,9 @@
 #navwrap, #navwrap ul {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     list-style:none;
-    transform: translate(25%);
-    position: relative;
+    /*transform: translate(25%);*/
+    position:relative;
 }
 #navwrap {
    width:900px;
@@ -37,12 +37,13 @@
 #navwrap li:hover > a {
     color:#685798;
     background:#AC94F4;
+    opacity:50%;
 }
 #navwrap ul {
     margin:20px 0 0 0;
-    opacity:0;
+    opacity:50%;
     visibility:hidden;
-    position:absolute;
+    position:absolute; /*don't fuck with*/
     top:46px;
     left:0;
     z-index:1;
@@ -79,6 +80,7 @@
 }
 #navwrap ul a:hover {
     background-color:#AC94F4;
+    opacity: 50%;
 }
 #navwrap ul li:first-child > a:after {
     content:'';
