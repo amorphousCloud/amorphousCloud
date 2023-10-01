@@ -1,78 +1,77 @@
 #navwrap, #navwrap ul {
-    margin: auto;
-    padding: auto;
-    list-style:none;
-    /*transform: translate(25%);*/
+    margin:auto;
+    padding:0;
+    list-style:none; /*ul bullets*/
+    transform:translateX(0%); /*THIS*/
     position:relative;
 }
-#navwrap {
-   width:900px;
-   margin:50px auto;
+#navwrap { /*maybe begin the media query here*/
+   width:452px; /*AHHHHHHH*/
+   margin:25px auto;
    background-color:#F5E6E8;
-   box-shadow:0 2px 5px rbga(0,0,0,0.5);
+   /*box-shadow:0 2px 5px green;*/
 }
 #navwrap:before, 
 #navwrap:after {
     content:'';
-    display:table;
+    display:grid;
 }
 #navwrap:after {
     clear:both;
 }
 #navwrap li {
-    float:left;
-    box-shadow: 1px 0 0 #222;
+    float:left; /*keeps order of tabs*/
+    /*box-shadow: 1px 1px 0 0 #10091D;*/
     position:relative;
 }
 #navwrap a{
-    float:left;
+    float:none; /*negligible*/
     padding:6px 15px;
     text-transform:lowercase;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration:none;
     color:#10091D;
-    text-align:center;
-    font-weight:600;
+    text-align:right; /*project drop down alignment*/
+    font-weight:600; /*i'd keep it here because it discerns it as a separate option*/
 }
 #navwrap li:hover > a {
-    color:#685798;
+    color:#10091D;
     background:#AC94F4;
-    opacity:50%;
+    opacity:100%;
 }
 #navwrap ul {
-    margin:20px 0 0 0;
-    opacity:50%;
-    visibility:hidden;
-    position:absolute; /*don't fuck with*/
-    top:46px;
-    left:0;
-    z-index:1;
+    margin:20px 20px 20px 20px; /*the heck this is creating a transition*/
+    opacity:100%;
+    visibility:hidden; /*hidden until hovered over*/
+    position:absolute; /*don't mess with*/
+    top:46px; /*how far drop down bar appears from projects*/
     background:#F5E6E8;
-    transition:all .2s ease-in-out;
-    box-shadow:0 2px 5px rgba(0,0,0,0.5);
+    transition:all .3s ease-in-out;
+    /*box-shadow:0 2px 5px rgba(0,0,0,0.5);*/
 }
 #navwrap li:hover > ul {
     opacity:1;
     visibility:visible;
     margin:0;
 }
-#navwrap ul ul {
+/*#navwrap ul ul {
     top:0;
-    left:150px;
-    margin:0 0 0 20px;
-}
+    left:150px; idk
+    margin:0 0 0 20px; idk - honestly seems fine without
+}*/
 #navwrap ul li {
     float:none;
-    display:block;
+    text-align: center;
+    display:block; /*changing nothing*/
     border:0;
-    box-shadow: 0 1px 0 #222, 0 1px 0 #666;
+    /*box-shadow: 0 1px 0 #222, 0 1px 0 #666;*/
 }
 #navwrap ul li:last-child {
     box-shadow:none;
 }
 #navwrap ul a {
-    padding:10px;
-    width:130px;
+    padding:10px; /*fine*/
+    width:130px; /*fine*/
     display:block;
     white-space:nowrap;
     float:none;
@@ -80,11 +79,12 @@
 }
 #navwrap ul a:hover {
     background-color:#AC94F4;
-    opacity: 50%;
+    color:#10091D;
+    opacity: 100%;
 }
 #navwrap ul li:first-child > a:after {
     content:'';
-    position:absolute;
+    position:absolute;/*no*/
     left:40px;
     top:-6px;
     border-left:6px solid transparent;
