@@ -23,6 +23,7 @@ header {
      text-align:center;
      margin:auto;
      background-image: url(images/sunsetSky.jpg);
+     background-size:60%;
      background-repeat:no-repeat;
      background-position: top;
      width:100%;
