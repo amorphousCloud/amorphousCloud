@@ -9,7 +9,7 @@
           display:none;
      }
      h1,p,blockquote,footer {      /*do not have educational credentials as i am making a portfolio*/
-          font-color:#000000;
+          color:#000000;
           font-family:'Poppin','Times New Roman', Times, serif;
           width:100%;
           padding: 0 !important;
@@ -49,8 +49,8 @@ body {
      height: 100vh;
      background-color: #F5E6E8; }
 main p { 
-     padding-left: 25%;
-     padding-right: 25%;
+     padding-left: 5%;
+     padding-right: 5%;
      text-align: center;
      display: grid;
      grid-template: 30px 300px;
@@ -68,10 +68,11 @@ main p:first-child::first-letter {
 footer { 
      background-image: url(images/pinkClouds.jpg);
      text-align: center;
-     padding-bottom:5%; 
+     padding-bottom:3%;
      background-repeat:no-repeat;
-     background-size: auto;
+     background-size:30vh;
      background-position: center;
+     margin:auto;
 }
 #zoomies {
      transition: transform .2s;
