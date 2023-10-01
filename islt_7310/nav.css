@@ -1,20 +1,48 @@
+/*@media (max-width: 1282px){
+    #navwrap {
+        width:641px;
+        margin:25px;
+        font-size:15px;
+        text-overflow: clip;
+    }
+}
+@media (max-width: 952px){
+    #navwrap {
+        width:476px;
+        margin:25px;
+        font-size:14px;
+        text-overflow: clip;
+    }
+}
+@media (max-width: 858px){
+    #navwrap  {
+        width:429px;
+        margin:25px;
+        font-size:13px;
+        text-overflow: clip;
+    }
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 #navwrap, #navwrap ul {
-    margin:auto;
-    padding:0;
+    margin:0;
+    padding:10px;
     list-style:none; /*ul bullets*/
-    transform:translateX(0%); /*THIS*/
     position:relative;
+    display:inline-block;
+    font-family: 'Poppins', 'Times New Roman', serif;
 }
 #navwrap { /*maybe begin the media query here*/
-   width:452px; /*AHHHHHHH*/
-   margin:25px auto;
+   width:482px; /*AHHHHHHH*/
+   margin:25px;
    background-color:#F5E6E8;
    /*box-shadow:0 2px 5px green;*/
+   font-size: 16px;
 }
 #navwrap:before, 
 #navwrap:after {
     content:'';
-    display:grid;
+    display:inline;
 }
 #navwrap:after {
     clear:both;
@@ -23,16 +51,17 @@
     float:left; /*keeps order of tabs*/
     /*box-shadow: 1px 1px 0 0 #10091D;*/
     position:relative;
+    
 }
 #navwrap a{
     float:none; /*negligible*/
     padding:6px 15px;
     text-transform:lowercase;
-    font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration:none;
     color:#10091D;
-    text-align:right; /*project drop down alignment*/
+    text-align:center; /*project drop down alignment*/
     font-weight:600; /*i'd keep it here because it discerns it as a separate option*/
+    font-family: 'Poppins', 'Times New Roman', serif;
 }
 #navwrap li:hover > a {
     color:#10091D;
@@ -40,12 +69,13 @@
     opacity:100%;
 }
 #navwrap ul {
-    margin:20px 20px 20px 20px; /*the heck this is creating a transition*/
+    margin:0; /*the heck this is creating a transition*/
     opacity:100%;
     visibility:hidden; /*hidden until hovered over*/
     position:absolute; /*don't mess with*/
-    top:46px; /*how far drop down bar appears from projects*/
-    background:#F5E6E8;
+    top:36px; /*how far drop down bar appears from projects*/
+    left:-36px;
+    background:#E4D5E3;
     transition:all .3s ease-in-out;
     /*box-shadow:0 2px 5px rgba(0,0,0,0.5);*/
 }

@@ -20,59 +20,70 @@ blockquote {
      font-family:'Poppins', sans-serif;
 }
 header {
-     text-align: center;}
+     text-align:center;
+     margin:auto;
+     background-image: url(images/sunsetSky.jpg);
+     background-repeat:no-repeat;
+     background-position: top;
+     width:100%;
+}
 h1 { 
      color: #685798;
-     text-align: center;
+     text-align:center;
      }
 h2 { 
      color: #AC94F4;
      text-align: center;
-     padding-left:25%;
-     padding-right:25%;
      }
 h3 { 
-     text-align: center;}
-figcaption {
      text-align: center;
+}
+figcaption {
+     text-align: left;
+     padding-left: 15%;
      font-style: italic;
 }
 img { 
      border-radius:10%;
      display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width:60%;
-     height:60%;
+     margin-left:auto;
+     margin-right:auto;
+     width:50%;
+     height:50%;
  }
 body { 
      height: 100vh;
-     background-color: #F5E6E8; }
+     background-color: #F5E6E8;
+     font-family: 'Poppins', 'Times New Roman', serif;
+}
 main p { 
-     padding-left: 5%;
-     padding-right: 5%;
-     text-align: center;
+     text-align: left;
      display: grid;
      grid-template: 30px 300px;
      grid-gap: 20px; 
+     font-size: 14px;
+     padding-left: 10%;
+     padding-right: 10%;
      }
 main blockquote {
-     padding-left: 25%;
-     padding-right: 25%;
-     text-align: center;
+     padding-left: 20%;
+     padding-right: 20%;
+     text-align: left;
      display: grid;
      }
 main p:first-child::first-letter {
      font-size: 150%; 
      }  
 footer { 
-     background-image: url(images/pinkClouds.jpg);
+     background-image: url(images/sunsetSky.jpg);
      text-align: center;
-     padding-bottom:3%;
      background-repeat:no-repeat;
-     background-size:30vh;
-     background-position: center;
-     margin:auto;
+     padding-bottom:3%;
+     background-position:center;
+     color:#EEA2C1;
+     font-weight:900;
+     text-shadow:2px 2px 2px #4A0074;
+     width:100%
 }
 #zoomies {
      transition: transform .2s;
@@ -83,3 +94,7 @@ footer {
  #zoomies:hover {
      transform: scale(1.5);
  }
+
+/*.opacity {
+     opacity:0.5;
+}*/
