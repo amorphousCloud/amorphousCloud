@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-               <meta charset="utf-8">
-               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-               <script src="https://kit.fontawesome.com/d3bf3028eb.js" crossorigin="anonymous"></script>
-               <title>hello, friend</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="nav stylesheet" href="nav.css">
-               <link rel="shortcut icon" href="images/cloud.png">
-               <style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/d3bf3028eb.js" crossorigin="anonymous"></script>
+        <title>say hello</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="nav stylesheet" href="nav.css">
+        <link rel="shortcut icon" href="images/cloud.png">
+            <style>
                 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-               img { 
-                border-radius:10%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width:60%;
-                height:60%;
+                img { 
+                    border-radius:10%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width:60%;
+                    height:60%;
                 }
                 i {
                     justify-self: right;
                 }
-                </style>
-</head>
+                body {
+                    font-family: 'Poppins', Arial, sans-serif;
+                    /*background-color: #f8eef3;*/
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    margin: 0;
+                }
+                .contact-form {
+                    background-color: #f9d2e5;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    text-align: center;
+                }
+                .form-group {
+                    margin-bottom: 20px;
+                }
+                .form-group input[type="text"],
+                .form-group input[type="email"],
+                .form-group textarea {
+                    width: 100%;
+                    padding: 10px;
+                    border: 2px solid #685798;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    margin-top: 5px;
+                    box-sizing: border-box;
+                }
+                .form-group input[type="submit"] {
+                    background-color: #685798;
+                    color: whitesmoke;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    border: none;
+                }
+                .form-group input[type="submit"]:hover {
+                    background-color: #685798;
+                }
+            </style>
+    </head>
 <body>
     <header>
         <h1> <i class="fa-solid fa-dice-d20 fa-spin"></i> The amorphousCloud Archive <i class="fa-solid fa-dice-d20 fa-spin"></i> </h1>
@@ -44,7 +83,26 @@
     </nav>
     </center>
     <main>
-        <h2>this page is still under construction!</h2>
+        <div class="contact-form">
+            <h1>say hello</h1>
+            <form action="mailto:rlbmr2@umsystem.edu?Subject=portfolio%20website%20contact" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" placeholder="first name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="last name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="cast message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="send with love">
+                </div>
+            </form>
+        </div>
     </main>
     <footer><br><br><i class="fa-solid fa-ghost" id="zoomies"></i> &copy; 2023 Reilly Brown<br> <i class="fa-solid fa-scroll" id="zoomies"></i> rlbmr2@umsystem.edu <br> <i class="fa-solid fa-headset" id="zoomies"></i> +1-999-999-999</footer>
 </body>
