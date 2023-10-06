@@ -58,7 +58,7 @@ body {
 main p { 
      text-align: left;
      display: grid;
-     grid-template: 30px 300px;
+     /*grid-template: 30px 300px;*/
      grid-gap: 20px; 
      font-size: 14px;
      padding-left: 10%;
